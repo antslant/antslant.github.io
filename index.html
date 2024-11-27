@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anthony Rigby</title>
+  </head>
+  <body>
+    <header>
+      <h1>Anthony Rigby - Web Developer</h1>
+    </header>
+
+    <main>
+      <section>
+        <h2>About</h2>
+        <div>
+          <img src="" alt="Image of Anthony Rigby - Web Developer" />
+          <p>
+            Hi, my name is Anthony Rigby. I'm a results-driven junior web
+            developer with <span id="years-experience"></span> years of
+            experience, specialising in start-ups and fast-paced environments.
+            Successfully built an e-commerce business from a small budget to
+            £500k in annual revenue, showcasing strong business acumen and
+            problem-solving skills. Passionate about delivering high-quality
+            solutions, I bring a detail-oriented and collaborative approach to
+            both independent work and team projects.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <section>
+      <h2>Experience</h2>
+      <article>
+        <h3>Mind Chart Health</h3>
+        <h4>Software Engineer. Remote (UK)</h4>
+        <p><time datetime="2022-12">December 2022</time> - Present</p>
+        <p>
+          Working as part of a two-person team under a senior engineer to
+          develop a mental health data tracking and data aggregation platform.
+          Work across both the front-end (React) and back-end (Express)
+          codebases, developing components, APIs, database schemas and writing
+          integration tests. Work independently with frequent code reviews.
+        </p>
+      </article>
+      <article>
+        <h3>Thru Ai</h3>
+        <h4>Front-End Software Engineer. Remote (San Francisco, US)</h4>
+        <p>
+          <time datetime="2024-01">January 2024</time> -
+          <time datetime="2024-04">April 2024</time> (3-month contract)
+        </p>
+        <p>
+          Helped develop a UI that allows users to leverage AI to build teams of
+          bots to automate and build workflows. Took Figma designs and built
+          feature-rich dashboards: filtering, search and drag and drop
+          interaction. Enhanced existing UI by improving data load times
+          (levering cache) and adding optimistic updates.
+        </p>
+      </article>
+      <article>
+        <h3>GoGetDoc</h3>
+        <h4>Front-End Software Engineer. Remote (San Francisco, US)</h4>
+        <p>
+          <time datetime="2021-08">August 2021</time> -
+          <time datetime="2022-12">December 2022</time>
+        </p>
+        <p>
+          Worked within a team of 11 engineers using the Agile methodology to
+          build and launch a telehealth application in the US. Responsible for
+          building pixel-perfect UI using Next.js and Material UI. Built UI
+          components, interacted with internal and third-party APIs and
+          frequently deployed code to the production environment.
+        </p>
+      </article>
+      <article>
+        <h3>GoGetTested</h3>
+        <h4>Junior Front-End Software Engineer. Remote (San Francisco, US)</h4>
+        <p>
+          <time datetime="2021-01">January 2021</time> -
+          <time datetime="2022-12">December 2022</time>
+        </p>
+        <p>
+          Maintained and further developed an existing codebase for scheduling
+          COVID-19 tests and managing COVID-19 vaccine status. The application
+          was used to book 20,000+ COVID-19 tests per month. Although employed
+          as a junior engineer as part of a two-person team, I ultimately became
+          solely responsible for maintaining, developing and deploying the
+          front-end codebase. Wrote end-to-end tests, built UI components and
+          quickly deployed bug fixes using the Agile methodology.
+        </p>
+      </article>
+      <article>
+        <h3>Nkd Man Limited</h3>
+        <h4>Owner</h4>
+        <p>
+          <time datetime="2006-11">November 2006</time> -
+          <time datetime="2019-11">December 2019</time>
+        </p>
+        <p>
+          Started an online store retailing men's shaving and grooming products.
+          Managed all aspects of the business: inventory, customer support,
+          financial planning, accounts and staffing. Grew the business to a
+          £500k (NET) yearly turnover with very little financial backing or
+          marketing. Served customers worldwide and built a reputation for
+          first-class customer service.
+        </p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Skills</h2>
+      <ul>
+        <li>Javascript</li>
+        <li>Typescript</li>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>
+          React
+          <ul>
+            <li>React Router (v6)</li>
+            <li>React Query</li>
+            <li>Next.js</li>
+            <li>Redux</li>
+          </ul>
+        </li>
+        <li>
+          Node
+          <ul>
+            <li>Express</li>
+          </ul>
+        </li>
+        <li>Git</li>
+        <li>
+          MySQL
+          <ul>
+            <li>Prisma</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <footer>
+      <nav>
+        <ul>
+          <li><a href="">LinkedIn</a></li>
+          <li><a href="">Github</a></li>
+        </ul>
+      </nav>
+    </footer>
+
+    <script>
+      const currentYear = new Date().getFullYear();
+      const startYear = 2021;
+      const experienceInYears = currentYear - startYear;
+
+      const years = document.querySelector("#years-experience");
+      years.textContent = experienceInYears;
+    </script>
+  </body>
+</html>
