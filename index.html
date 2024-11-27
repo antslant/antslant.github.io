@@ -6,6 +6,11 @@
     <title>Anthony Rigby</title>
   </head>
   <body>
+    <input type="checkbox" id="theme-toggle" />
+    <label for="theme-toggle"
+      >Dark mode <span id="dark-mode-status">off</span></label
+    >
+
     <header>
       <h1>Anthony Rigby - Web Developer</h1>
     </header>
@@ -149,13 +154,6 @@
       </nav>
     </footer>
 
-    <script>
-      const currentYear = new Date().getFullYear();
-      const startYear = 2021;
-      const experienceInYears = currentYear - startYear;
-
-      const years = document.querySelector("#years-experience");
-      years.textContent = experienceInYears;
-    </script>
+    <script type="module" src="main.js"></script>
   </body>
 </html>
