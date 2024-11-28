@@ -1,0 +1,134 @@
+/* Reset margins*/
+* {
+  margin: 0;
+}
+
+@font-face {
+  font-family: "EuclidFlex";
+  src: url("/assets/fonts/EuclidFlex-Regular.otf");
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url("/assets/fonts/Inter-VariableFont_opsz\,wght.ttf");
+}
+
+body {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  background-color: #f7f7f7;
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  max-width: 1000px;
+}
+
+h1,
+h2 {
+  font-family: "EuclidFlex", sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+.spacing-lg {
+  margin-bottom: 2rem;
+}
+
+.spacing-md {
+  margin-bottom: 1rem;
+}
+
+.spacing-sm {
+  margin-bottom: 0.5rem;
+}
+
+header {
+  margin: 20px 0;
+}
+
+#main-container {
+  display: flex;
+  gap: 20px;
+}
+
+main {
+  margin: 50px 0;
+}
+
+article {
+  margin-bottom: 30px;
+}
+
+#experience {
+  flex: 2;
+}
+
+#skills {
+  flex: 1;
+  text-align: right;
+}
+
+.job-info {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.profile-image {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.intro {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+
+.dot-separator {
+  color: #cc9900;
+}
+
+p {
+  line-height: 1.75rem;
+  color: #333;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+  font-size: 1.25rem;
+  padding-bottom: 5px;
+}
+
+ul li ul li {
+  color: #666;
+  font-size: 1rem;
+  margin-left: 10px;
+}
+
+.sub-text {
+  color: #666;
+}
+
+.paragraph {
+  margin-top: 10px;
+}
