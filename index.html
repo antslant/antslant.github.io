@@ -8,28 +8,27 @@
   </head>
   <body>
     <div class="container">
-      <div class="theme">
-        <label id="theme-toggle" class="switch">
-          <input type="checkbox" />
-          <span class="slider round"></span>
-        </label>
-      </div>
-
       <header>
-        <h1 class="main-title">
+        <div class="theme">
+          <label id="theme-toggle" class="switch">
+            <input type="checkbox" />
+            <span class="slider round"></span>
+          </label>
+        </div>
+        <h1>
           Anthony Rigby <span class="dot-separator">—</span> Web Developer
         </h1>
       </header>
 
       <main>
-        <section style="margin-top: 80px; margin-bottom: 80px">
+        <section>
           <div class="intro">
             <img
               src="/assets/images/1699359903080.jpg"
               alt="Image of Anthony Rigby - Web Developer"
               class="profile-image"
             />
-            <p>
+            <p class="intro-text">
               Hi, my name is Anthony Rigby. I'm a results-driven junior web
               developer with <span id="years-experience"></span> years of
               experience, specialising in start-ups and fast-paced environments.
@@ -62,7 +61,7 @@
             </p>
           </article>
           <article>
-            <h3 class="spacing-sm">Thru Ai</h3>
+            <h3>Thru Ai</h3>
             <h4>Front-End Software Engineer (Remote - San Francisco, US)</h4>
             <p class="sub-text">
               <time datetime="2024-01">January 2024</time> -
@@ -77,7 +76,7 @@
             </p>
           </article>
           <article>
-            <h3 class="spacing-sm">GoGetDoc</h3>
+            <h3>GoGetDoc</h3>
             <h4>Front-End Software Engineer (Remote - San Francisco, US)</h4>
             <p class="sub-text">
               <time datetime="2021-08">August 2021</time> -
@@ -93,7 +92,7 @@
             </p>
           </article>
           <article>
-            <h3 class="spacing-sm">GoGetTested</h3>
+            <h3>GoGetTested</h3>
             <h4>
               Junior Front-End Software Engineer (Remote - San Francisco, US)
             </h4>
@@ -113,7 +112,7 @@
             </p>
           </article>
           <article>
-            <h3 class="spacing-sm">Nkd Man Limited</h3>
+            <h3>Nkd Man Limited</h3>
             <h4>Owner</h4>
             <p class="sub-text">
               <time datetime="2006-11">November 2006</time> -
@@ -156,22 +155,22 @@
               MySQL
               <ul>
                 <li>Prisma</li>
-                <li>PlanetScale</li>
               </ul>
             </li>
             <li>Git</li>
           </ul>
         </section>
-      </div>
 
-      <footer>
-        <nav>
-          <ul>
-            <li><a href="">LinkedIn</a></li>
-            <li><a href="">Github</a></li>
-          </ul>
-        </nav>
-      </footer>
+        <section class="links">
+          <h2>Links</h2>
+          <nav>
+            <ul>
+              <li><a href="">LinkedIn</a></li>
+              <li><a href="">Github</a></li>
+            </ul>
+          </nav>
+        </section>
+      </div>
 
       <script type="module" src="main.js"></script>
     </div>
