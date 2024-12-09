@@ -8,13 +8,15 @@
   </head>
   <body>
     <div class="container">
-      <input type="checkbox" id="theme-toggle" />
-      <label for="theme-toggle"
-        >Dark mode <span id="dark-mode-status">off</span></label
-      >
+      <div class="theme">
+        <label id="theme-toggle" class="switch">
+          <input type="checkbox" />
+          <span class="slider round"></span>
+        </label>
+      </div>
 
       <header>
-        <h1>
+        <h1 class="main-title">
           Anthony Rigby <span class="dot-separator">—</span> Web Developer
         </h1>
       </header>
@@ -23,7 +25,7 @@
         <section style="margin-top: 80px; margin-bottom: 80px">
           <div class="intro">
             <img
-              src="/assets/images/DALL·E 2024-11-28 16.35.26 - A cartoon-style digital portrait of a smiling man with short brown hair, wearing a dark jacket, indoors with soft lighting. The style should be vibran.webp"
+              src="/assets/images/1699359903080.jpg"
               alt="Image of Anthony Rigby - Web Developer"
               class="profile-image"
             />
@@ -41,11 +43,11 @@
         </section>
       </main>
 
-      <div id="main-container">
+      <div class="main-container">
         <section id="experience">
-          <h2 class="spacing-md">Experience</h2>
+          <h2>Experience</h2>
           <article>
-            <h3 class="spacing-sm">Mind Chart Health</h3>
+            <h3>Mind Chart Health</h3>
             <h4>Software Engineer (Remote - UK)</h4>
             <p class="sub-text">
               <time datetime="2022-12">December 2022</time> - Present
@@ -128,8 +130,8 @@
           </article>
         </section>
 
-        <section id="skills">
-          <h2 class="spacing-md">Skills</h2>
+        <section class="skills">
+          <h2>Skills</h2>
           <ul>
             <li>Javascript</li>
             <li>Typescript</li>
@@ -138,7 +140,7 @@
             <li>
               React
               <ul>
-                <li>React Router (v6)</li>
+                <li>React Router</li>
                 <li>React Query</li>
                 <li>Next.js</li>
                 <li>Redux</li>
