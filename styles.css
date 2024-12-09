@@ -16,14 +16,11 @@
 h1,
 h2 {
   font-family: "EuclidFlex", sans-serif;
+  font-weight: bolder;
 }
 
 h1 {
   font-size: 3rem;
-}
-
-header {
-  margin: 20px 0;
 }
 
 .job-info {
@@ -47,7 +44,16 @@ h2 {
   font-size: 1.75rem;
   text-transform: uppercase;
   margin-bottom: 1.5rem;
-  text-decoration: underline #cc9900 0.25rem;
+}
+
+h2::before {
+  content: "";
+  display: inline-block;
+  width: 1rem; /* Adjust length */
+  height: 0.3rem; /* Adjust thickness */
+  background-color: #cc9900;
+  margin-right: 0.5rem;
+  vertical-align: middle;
 }
 
 h3 {
@@ -59,11 +65,11 @@ h3 {
 h4 {
   font-size: 1rem;
   font-weight: 500;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.1rem;
 }
 
 .intro-text {
-  line-height: 1.4rem;
+  line-height: 1.5rem;
   color: #4d4d4d;
 }
 
@@ -192,7 +198,6 @@ input:checked + .slider:before {
 
 .theme {
   margin-bottom: 1rem;
-  margin-top: -2rem;
   text-align: right;
 }
 
