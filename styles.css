@@ -3,6 +3,10 @@
   margin: 0;
 }
 
+:root {
+  --accent: #cc9900;
+}
+
 @font-face {
   font-family: "EuclidFlex";
   src: url("/assets/fonts/EuclidFlex-Regular.otf");
@@ -23,11 +27,6 @@ h1 {
   font-size: 3rem;
 }
 
-.job-info {
-  display: flex;
-  gap: 0.5rem;
-}
-
 /**
 Mobile styles
 **/
@@ -41,24 +40,16 @@ body {
 }
 
 h2 {
+  display: inline-block;
   font-size: 1.75rem;
   text-transform: uppercase;
   margin-bottom: 1.5rem;
-}
-
-h2::before {
-  content: "";
-  display: inline-block;
-  width: 1rem; /* Adjust length */
-  height: 0.3rem; /* Adjust thickness */
-  background-color: #cc9900;
-  margin-right: 0.5rem;
-  vertical-align: middle;
+  border-bottom: 0.2rem solid var(--accent);
 }
 
 h3 {
   font-size: 1.5rem;
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.5rem;
   font-weight: 600;
 }
 
@@ -74,7 +65,6 @@ h4 {
 }
 
 .paragraph {
-  margin-top: 1rem;
   line-height: 1.4rem;
   font-size: 0.875rem;
   color: #4d4d4d;
@@ -84,6 +74,7 @@ h4 {
   color: #777;
   font-size: 0.875rem;
   font-style: italic;
+  margin-bottom: 0.5rem;
 }
 
 article {
@@ -100,7 +91,7 @@ article {
 
 .container {
   display: grid;
-  gap: 3rem;
+  gap: 4rem;
 }
 
 .profile-image {
@@ -120,35 +111,41 @@ ul li {
   list-style: none;
   font-size: 1rem;
   font-weight: 500;
-  line-height: 1.75rem;
+  line-height: 2rem;
 }
 
 ul li ul li::before {
   content: "–";
-  margin-right: 0.5rem;
+  margin-right: 0.3rem;
 }
 
 ul li ul li {
   color: #777;
-  font-size: 0.85rem;
+  font-size: 1rem;
   line-height: 1.5rem;
 }
+
+a {
+  color: #000;
+}
+
+/**********************************
+Slider
+***********************************/
 
 .switch {
   position: relative;
   display: inline-block;
-  width: 37.5px;
-  height: 21.5px;
+  width: 45px;
+  height: 25.5px;
 }
 
-/* Hide default HTML checkbox */
 .switch input {
   opacity: 0;
   width: 0;
   height: 0;
 }
 
-/* The slider */
 .slider {
   position: absolute;
   cursor: pointer;
@@ -164,10 +161,10 @@ ul li ul li {
 .slider:before {
   position: absolute;
   content: "";
-  height: 16.25px;
-  width: 16.25px;
-  left: 2.5px;
-  bottom: 2.5px;
+  height: 19.5px;
+  width: 19.5px;
+  left: 3px;
+  bottom: 3px;
   background-color: white;
   -webkit-transition: 0.4s;
   transition: 0.4s;
@@ -182,19 +179,20 @@ input:focus + .slider {
 }
 
 input:checked + .slider:before {
-  -webkit-transform: translateX(16.25px);
-  -ms-transform: translateX(16.25px);
-  transform: translateX(16.25px);
+  -webkit-transform: translateX(19.5px);
+  -ms-transform: translateX(19.5px);
+  transform: translateX(19.5px);
 }
 
-/* Rounded sliders */
 .slider.round {
-  border-radius: 42.5px;
+  border-radius: 34px;
 }
 
 .slider.round:before {
   border-radius: 50%;
 }
+
+/*******************************************/
 
 .theme {
   margin-bottom: 1rem;
@@ -227,6 +225,6 @@ Styles for screens over 600px wide
   }
 }
 
-.dot-separator {
-  color: #cc9900;
+.dash {
+  color: var(--accent);
 }
