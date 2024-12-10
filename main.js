@@ -8,7 +8,6 @@ yearsExperienceText.textContent = yearsExperience.toString();
 
 // Add a theme toggle
 const themeToggle = document.getElementById("theme-toggle");
-const darkModeStatus = document.getElementById("dark-mode-status");
 
 const prefersDarkMode = window.matchMedia(
   "(prefers-color-scheme: dark)"
@@ -16,7 +15,9 @@ const prefersDarkMode = window.matchMedia(
 
 themeToggle.checked = prefersDarkMode;
 
-if (themeToggle.checked) document.body.classList.add("dark");
+if (themeToggle.checked) {
+  document.body.classList.add("dark");
+}
 
 themeToggle.addEventListener("click", (e) => {
   if (e.target.checked) {

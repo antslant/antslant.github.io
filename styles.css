@@ -147,7 +147,7 @@ Slider
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color: var(--accent);
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -159,7 +159,7 @@ Slider
   width: 19.5px;
   left: 3px;
   bottom: 3px;
-  background-color: white;
+  background-color: #f7f7f7;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
