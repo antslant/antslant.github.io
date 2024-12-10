@@ -77,8 +77,7 @@ h4 {
 }
 
 .highlight {
-  background-color: var(--accent);
-  padding: 0.25rem;
+  border-bottom: 5px solid var(--accent);
 }
 
 article:not(:last-child) {
@@ -206,7 +205,7 @@ Styles for screens over 600px wide
   }
 
   h3 {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
   }
 
   h4 {
@@ -225,7 +224,7 @@ Styles for screens over 600px wide
 
   .intro-text {
     font-size: 1.3rem;
-    line-height: 2.3rem;
+    line-height: 2.4rem;
   }
 
   .sub-text {
@@ -233,14 +232,18 @@ Styles for screens over 600px wide
   }
 
   ul li {
-    font-size: 1.3rem;
-    line-height: 2.6rem;
+    font-size: 1.2rem;
+    line-height: 2.5rem;
   }
 
   .intro {
     display: flex;
     align-items: center;
     gap: 4rem;
+  }
+
+  .highlight {
+    border-bottom: 5px solid var(--accent);
   }
 
   header {
