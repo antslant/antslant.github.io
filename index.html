@@ -9,7 +9,7 @@
   <body>
     <div class="container">
       <header>
-        <div class="theme">
+        <div class="theme-toggle">
           <label id="theme-toggle" class="switch">
             <input type="checkbox" />
             <span class="slider round"></span>
@@ -21,11 +21,11 @@
       <main>
         <section>
           <div class="intro">
-            <img
+            <!-- <img
               src="/assets/images/1699359903080.jpg"
               alt="Image of Anthony Rigby - Web Developer"
               class="profile-image"
-            />
+            /> -->
             <p class="intro-text">
               Hi, my name is Anthony Rigby. I'm a results-driven junior web
               developer with <span id="years-experience"></span> years of
@@ -40,115 +40,120 @@
         </section>
       </main>
 
-      <section>
-        <h2 class="highlight">Experience</h2>
-        <article>
-          <h3>Mind Chart Health</h3>
-          <h4>Software Engineer (Remote - UK)</h4>
-          <p class="sub-text">
-            <time datetime="2022-12">December 2022</time> - Present
-          </p>
-          <p class="paragraph">
-            Working as part of a two-person team under a senior engineer to
-            develop a mental health data tracking and data aggregation platform.
-            Work across both the front-end (React) and back-end (Express)
-            codebases, developing components, APIs, database schemas and writing
-            integration tests. Work independently with frequent code reviews.
-          </p>
-        </article>
-        <article>
-          <h3>Thru Ai</h3>
-          <h4>Front-End Software Engineer (Remote - San Francisco, US)</h4>
-          <p class="sub-text">
-            <time datetime="2024-01">January 2024</time> -
-            <time datetime="2024-04">April 2024</time> (3-month contract)
-          </p>
-          <p class="paragraph">
-            Helped develop a UI that allows users to leverage AI to build teams
-            of bots to automate and build workflows. Took Figma designs and
-            built feature-rich dashboards: filtering, search and drag and drop
-            interaction. Enhanced existing UI by improving data load times
-            (leveraging cache) and adding optimistic updates.
-          </p>
-        </article>
-        <article>
-          <h3>GoGetDoc</h3>
-          <h4>Front-End Software Engineer (Remote - San Francisco, US)</h4>
-          <p class="sub-text">
-            <time datetime="2021-08">August 2021</time> -
-            <time datetime="2022-12">December 2022</time>
-          </p>
-          <p class="paragraph">
-            Worked within a team of 11 engineers using the Agile methodology to
-            build and launch a telehealth application in the US. Responsible for
-            building pixel-perfect UI using Next.js and Material UI. Built UI
-            components, interacted with internal and third-party APIs and
-            frequently deployed code to the production environment.
-          </p>
-        </article>
-        <article>
-          <h3>GoGetTested</h3>
-          <h4>
-            Junior Front-End Software Engineer (Remote - San Francisco, US)
-          </h4>
-          <p class="sub-text">
-            <time datetime="2021-01">January 2021</time> -
-            <time datetime="2022-12">December 2022</time>
-          </p>
-          <p class="paragraph">
-            Maintained and further developed an existing codebase for scheduling
-            COVID-19 tests and managing COVID-19 vaccine status. The application
-            was used to book 20,000+ COVID-19 tests per month. Although employed
-            as a junior engineer as part of a two-person team, I ultimately
-            became solely responsible for maintaining, developing and deploying
-            the front-end codebase. Wrote end-to-end tests, built UI components
-            and quickly deployed bug fixes using the Agile methodology.
-          </p>
-        </article>
-        <article>
-          <h3>Nkd Man Limited</h3>
-          <h4>Owner</h4>
-          <p class="sub-text">
-            <time datetime="2006-11">November 2006</time> -
-            <time datetime="2019-11">December 2019</time>
-          </p>
-          <p class="paragraph">
-            Started an online store retailing men's shaving and grooming
-            products. Managed all aspects of the business: inventory, customer
-            support, financial planning, accounts and staffing. Grew the
-            business to a £500k (NET) yearly turnover with very little financial
-            backing or marketing. Served customers worldwide and built a
-            reputation for first-class customer service.
-          </p>
-        </article>
-      </section>
+      <div class="showcase">
+        <section>
+          <h2 class="highlight">Experience</h2>
+          <article>
+            <h3>Mind Chart Health</h3>
+            <h4>Software Engineer (Remote - UK)</h4>
+            <p class="sub-text">
+              <time datetime="2022-12">December 2022</time> - Present
+            </p>
+            <p class="paragraph">
+              Working as part of a two-person team under a senior engineer to
+              develop a mental health data tracking and data aggregation
+              platform. Work across both the front-end (React) and back-end
+              (Express) codebases, developing components, APIs, database schemas
+              and writing integration tests. Work independently with frequent
+              code reviews.
+            </p>
+          </article>
+          <article>
+            <h3>Thru Ai</h3>
+            <h4>Front-End Software Engineer (Remote - San Francisco, US)</h4>
+            <p class="sub-text">
+              <time datetime="2024-01">January 2024</time> -
+              <time datetime="2024-04">April 2024</time> (3-month contract)
+            </p>
+            <p class="paragraph">
+              Helped develop a UI that allows users to leverage AI to build
+              teams of bots to automate and build workflows. Took Figma designs
+              and built feature-rich dashboards: filtering, search and drag and
+              drop interaction. Enhanced existing UI by improving data load
+              times (leveraging cache) and adding optimistic updates.
+            </p>
+          </article>
+          <article>
+            <h3>GoGetDoc</h3>
+            <h4>Front-End Software Engineer (Remote - San Francisco, US)</h4>
+            <p class="sub-text">
+              <time datetime="2021-08">August 2021</time> -
+              <time datetime="2022-12">December 2022</time>
+            </p>
+            <p class="paragraph">
+              Worked within a team of 11 engineers using the Agile methodology
+              to build and launch a telehealth application in the US.
+              Responsible for building pixel-perfect UI using Next.js and
+              Material UI. Built UI components, interacted with internal and
+              third-party APIs and frequently deployed code to the production
+              environment.
+            </p>
+          </article>
+          <article>
+            <h3>GoGetTested</h3>
+            <h4>
+              Junior Front-End Software Engineer (Remote - San Francisco, US)
+            </h4>
+            <p class="sub-text">
+              <time datetime="2021-01">January 2021</time> -
+              <time datetime="2022-12">December 2022</time>
+            </p>
+            <p class="paragraph">
+              Maintained and further developed an existing codebase for
+              scheduling COVID-19 tests and managing COVID-19 vaccine status.
+              The application was used to book 20,000+ COVID-19 tests per month.
+              Although employed as a junior engineer as part of a two-person
+              team, I ultimately became solely responsible for maintaining,
+              developing and deploying the front-end codebase. Wrote end-to-end
+              tests, built UI components and quickly deployed bug fixes using
+              the Agile methodology.
+            </p>
+          </article>
+          <article>
+            <h3>Nkd Man Limited</h3>
+            <h4>Owner</h4>
+            <p class="sub-text">
+              <time datetime="2006-11">November 2006</time> -
+              <time datetime="2019-11">December 2019</time>
+            </p>
+            <p class="paragraph">
+              Started an online store retailing men's shaving and grooming
+              products. Managed all aspects of the business: inventory, customer
+              support, financial planning, accounts and staffing. Grew the
+              business to a £500k (NET) yearly turnover with very little
+              financial backing or marketing. Served customers worldwide and
+              built a reputation for first-class customer service.
+            </p>
+          </article>
+        </section>
 
-      <section class="skills">
-        <h2 class="highlight">Skills</h2>
-        <ul>
-          <li>Javascript</li>
-          <li>Typescript</li>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>React</li>
-          <li>React Router</li>
-          <li>React Query</li>
-          <li>Next.js</li>
-          <li>Redux</li>
-          <li>Node</li>
-          <li>Express</li>
-          <li>MySQL</li>
-          <li>Prisma</li>
-          <li>Git</li>
-        </ul>
-      </section>
+        <section class="skills">
+          <h2 class="highlight">Skills</h2>
+          <ul>
+            <li>Javascript</li>
+            <li>Typescript</li>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>React</li>
+            <li>React Router</li>
+            <li>React Query</li>
+            <li>Next.js</li>
+            <li>Redux</li>
+            <li>Node</li>
+            <li>Express</li>
+            <li>MySQL</li>
+            <li>Prisma</li>
+            <li>Git</li>
+          </ul>
+        </section>
+      </div>
 
       <section class="links">
         <h2 class="highlight">Links</h2>
         <nav>
           <ul>
             <li><a href="">LinkedIn</a></li>
-            <li><a href="">Github</a></li>
+            <li><a href="https://github.com/antslant">Github</a></li>
           </ul>
         </nav>
       </section>

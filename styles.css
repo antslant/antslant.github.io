@@ -5,6 +5,7 @@
 
 :root {
   --accent: #cc9900;
+  --text-body: #4d4d4d;
 }
 
 @font-face {
@@ -17,16 +18,6 @@
   src: url("/assets/fonts/OpenSans-VariableFont_wdth\,wght.ttf");
 }
 
-h1,
-h2 {
-  font-family: "EuclidFlex", sans-serif;
-  font-weight: bolder;
-}
-
-h1 {
-  font-size: 3rem;
-}
-
 /**
 Mobile styles
 **/
@@ -37,6 +28,16 @@ body {
   justify-content: center;
   background-color: #f7f7f7;
   font-family: "OpenSans", sans-serif;
+}
+
+h1,
+h2 {
+  font-family: "EuclidFlex", sans-serif;
+  font-weight: bolder;
+}
+
+h1 {
+  font-size: 3rem;
 }
 
 h2 {
@@ -60,12 +61,12 @@ h4 {
 
 .intro-text {
   line-height: 1.6rem;
-  color: #4d4d4d;
+  color: var(--text-body);
 }
 
 .paragraph {
   line-height: 1.6rem;
-  color: #4d4d4d;
+  color: var(--text-body);
 }
 
 .sub-text {
@@ -84,21 +85,18 @@ article:not(:last-child) {
   margin-bottom: 2rem;
 }
 
-.intro {
-  text-align: left;
-}
-
 .container {
   display: grid;
   gap: 2rem;
 }
 
-.profile-image {
-  display: none;
+.skills {
+  margin-top: 2rem;
 }
 
-.links {
-  margin-top: 2rem;
+/* Hide the profile image on mobile */
+.profile-image {
+  display: none;
 }
 
 ul {
@@ -118,6 +116,10 @@ a {
 }
 
 a:hover {
+  color: var(--accent);
+}
+
+.dash {
   color: var(--accent);
 }
 
@@ -186,7 +188,7 @@ input:checked + .slider:before {
 
 /*******************************************/
 
-.theme {
+.theme-toggle {
   margin-bottom: 1rem;
   text-align: right;
 }
@@ -198,25 +200,26 @@ Styles for screens over 600px wide
   .intro {
     display: flex;
     align-items: center;
-    text-align: left;
+    gap: 4rem;
   }
 
   .container {
     text-align: left;
     max-width: 1000px;
+    gap: 6rem;
   }
 
   .profile-image {
     display: block;
     margin-bottom: 0;
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 1rem;
   }
-}
 
-.dash {
-  color: var(--accent);
+  .showcase {
+    display: flex;
+    justify-content: space-between;
+    gap: 6rem;
+  }
 }
