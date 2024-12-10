@@ -16,10 +16,12 @@ const prefersDarkMode = window.matchMedia(
 
 themeToggle.checked = prefersDarkMode;
 
-if (themeToggle.checked) darkModeStatus.textContent = "on";
+if (themeToggle.checked) document.body.classList.add("dark");
 
-themeToggle.addEventListener("click", () => {
-  if (themeToggle.checked) {
-    darkModeStatus.textContent = "on";
-  } else darkModeStatus.textContent = "off";
+themeToggle.addEventListener("click", (e) => {
+  if (e.target.checked) {
+    document.body.classList.add("dark");
+  } else {
+    document.body.classList.remove("dark");
+  }
 });

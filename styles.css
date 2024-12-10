@@ -164,7 +164,7 @@ Slider
 }
 
 input:checked + .slider {
-  background-color: #000;
+  background-color: var(--accent);
 }
 
 input:focus + .slider {
@@ -175,6 +175,7 @@ input:checked + .slider:before {
   -webkit-transform: translateX(19.5px);
   -ms-transform: translateX(19.5px);
   transform: translateX(19.5px);
+  background-color: #333;
 }
 
 .slider.round {
@@ -183,6 +184,23 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+body.dark {
+  background-color: #333;
+  color: #fff;
+}
+
+body.dark .paragraph {
+  color: #f3f3f3;
+}
+
+body.dark .intro-text {
+  color: #f3f3f3;
+}
+
+body.dark .sub-text {
+  color: #c3c3c3;
 }
 
 /*******************************************/
@@ -243,7 +261,7 @@ Styles for screens over 600px wide
   }
 
   .highlight {
-    border-bottom: 5px solid var(--accent);
+    border-bottom: 7px solid var(--accent);
   }
 
   header {
