@@ -76,10 +76,6 @@ h4 {
   margin-bottom: 0.5rem;
 }
 
-.highlight {
-  border-bottom: 5px solid var(--accent);
-}
-
 article:not(:last-child) {
   margin-bottom: 2rem;
 }
@@ -120,6 +116,11 @@ a:hover {
 
 .dash {
   color: var(--accent);
+}
+
+.highlight {
+  background-color: var(--accent);
+  padding: 0.2rem;
 }
 
 /**********************************
@@ -258,10 +259,6 @@ Styles for screens over 600px wide
     display: flex;
     align-items: center;
     gap: 4rem;
-  }
-
-  .highlight {
-    border-bottom: 7px solid var(--accent);
   }
 
   header {
