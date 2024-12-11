@@ -28,6 +28,7 @@ body {
   justify-content: center;
   background-color: #f7f7f7;
   font-family: "OpenSans", sans-serif;
+  transition: background-color 0.4s, color 0.4s;
 }
 
 h1,
