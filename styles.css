@@ -190,7 +190,7 @@ input:checked + .slider:before {
   width: 1.5rem;
   height: 1.5rem;
   border-radius: 50%;
-  background-size: 1rem;
+  background-size: 0.9rem;
   background-repeat: no-repeat;
   background-position: center;
   background-image: url("/assets/icons/night.svg");
