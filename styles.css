@@ -82,7 +82,7 @@ article:not(:last-child) {
 
 .container {
   display: grid;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .skills {
@@ -120,6 +120,22 @@ a:hover {
 
 .highlight {
   border-bottom: 0.3rem solid var(--accent);
+}
+
+.social-link {
+  padding-left: 2rem;
+}
+
+.social-link[data-icon="github"] {
+  background-image: url("/assets/icons/github.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.social-link[data-icon="linkedin"] {
+  background-image: url("/assets/icons/linkedin.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
 }
 
 /**********************************
@@ -215,6 +231,22 @@ body.dark .intro-text {
 
 body.dark .sub-text {
   color: #c3c3c3;
+}
+
+body.dark .social-link {
+  color: #fff;
+}
+
+body.dark .social-link:hover {
+  color: var(--accent);
+}
+
+body.dark .social-link[data-icon="github"] {
+  background-image: url("/assets/icons/github-dark.svg");
+}
+
+body.dark .social-link[data-icon="linkedin"] {
+  background-image: url("/assets/icons/linkedin-dark.svg");
 }
 
 /*******************************************/
