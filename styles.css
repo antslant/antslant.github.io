@@ -187,8 +187,8 @@ input:checked + .slider:before {
   background-color: #333;
   content: "";
   display: block;
-  width: 1.4rem;
-  height: 1.4rem;
+  width: 1.5rem;
+  height: 1.5rem;
   border-radius: 50%;
   background-size: 1rem;
   background-repeat: no-repeat;
