@@ -281,7 +281,7 @@ Styles for screens over 600px wide
 
   ul li {
     font-size: 1.2rem;
-    line-height: 2.5rem;
+    margin-bottom: 0.5rem;
   }
 
   .intro {
@@ -304,6 +304,7 @@ Styles for screens over 600px wide
 
   .skills {
     margin-top: 0;
+    flex: 2;
   }
 
   .profile-image {
