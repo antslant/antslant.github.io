@@ -90,11 +90,6 @@ article:not(:last-child) {
   margin-top: 2rem;
 }
 
-/* Hide the profile image on mobile */
-.profile-image {
-  display: none;
-}
-
 ul {
   margin: 0;
   padding: 0;
@@ -122,20 +117,13 @@ a:hover {
   border-bottom: 0.3rem solid var(--accent);
 }
 
-.social-link {
-  padding-left: 2rem;
+footer nav ul {
+  display: flex;
+  gap: 1rem;
 }
 
-.social-link[data-icon="github"] {
-  background-image: url("/assets/icons/github.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
-}
-
-.social-link[data-icon="linkedin"] {
-  background-image: url("/assets/icons/linkedin.svg");
-  background-repeat: no-repeat;
-  background-position: left center;
+.portfolio {
+  display: none;
 }
 
 /**********************************
@@ -212,6 +200,10 @@ input:checked + .slider:before {
   display: block;
 }
 
+.contact {
+  display: none;
+}
+
 /** Dark theme styles **/
 
 body.dark {
@@ -231,20 +223,12 @@ body.dark .sub-text {
   color: #c3c3c3;
 }
 
-body.dark .social-link {
+body.dark footer nav ul li a svg {
   color: #fff;
 }
 
-body.dark .social-link:hover {
+body.dark footer nav ul li a svg:hover {
   color: var(--accent);
-}
-
-body.dark .social-link[data-icon="github"] {
-  background-image: url("/assets/icons/github-dark.svg");
-}
-
-body.dark .social-link[data-icon="linkedin"] {
-  background-image: url("/assets/icons/linkedin-dark.svg");
 }
 
 /*******************************************/
@@ -318,7 +302,6 @@ Styles for screens over 600px wide
 
   .skills {
     margin-top: 0;
-    flex: 2;
   }
 
   .showcase {
@@ -329,5 +312,68 @@ Styles for screens over 600px wide
 
   .masonry {
     column-count: 2;
+  }
+}
+
+@media print {
+  .contact {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .contact p:last-child::before {
+    content: "|";
+    color: var(--accent);
+    margin-right: 0.5rem;
+  }
+
+  .other-interests {
+    display: none;
+  }
+
+  article {
+    page-break-inside: avoid;
+  }
+
+  .title {
+    display: block;
+  }
+
+  .skills ul {
+    padding: 0;
+  }
+
+  .skills ul li {
+    margin-bottom: 0;
+    white-space: nowrap;
+    display: inline-block;
+  }
+
+  .skills ul li:not(:last-child)::after {
+    content: ", ";
+  }
+
+  .skills ul li:last-child::after {
+    content: ".";
+  }
+
+  footer nav ul {
+    display: block;
+  }
+
+  footer a {
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  footer a::after {
+    content: attr(href);
+    margin-left: 0.5rem;
+    vertical-align: middle;
+  }
+
+  .portfolio {
+    display: contents;
   }
 }

@@ -1,3 +1,4 @@
+import { addContactDetails } from "./modules/addContactDetails.js";
 import { getYearsExperience } from "./modules/utils.js";
 
 // Dynamically calculate my number of years experience
@@ -24,5 +25,17 @@ themeToggle.addEventListener("click", (e) => {
     document.body.classList.add("dark");
   } else {
     document.body.classList.remove("dark");
+  }
+});
+
+const mediaQuery = window.matchMedia("print");
+
+mediaQuery.addEventListener("change", (e) => {
+  if (
+    e.matches &&
+    (window.location.hostname === "localhost" ||
+      window.location.hostname === "127.0.0.1")
+  ) {
+    addContactDetails();
   }
 });

@@ -1,0 +1,4 @@
+# Ignore contact details as these need to be kept private
+
+contact.html
+addContactDetails.js
