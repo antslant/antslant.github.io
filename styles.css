@@ -321,14 +321,6 @@ Styles for screens over 600px wide
     flex: 2;
   }
 
-  .profile-image {
-    display: block;
-    margin-bottom: 0;
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-  }
-
   .showcase {
     display: flex;
     justify-content: space-between;
