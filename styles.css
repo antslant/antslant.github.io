@@ -10,12 +10,12 @@
 
 @font-face {
   font-family: "EuclidFlex";
-  src: url("/assets/fonts/EuclidFlex-Regular.otf");
+  src: url("public/fonts/EuclidFlex-Regular.otf");
 }
 
 @font-face {
   font-family: "OpenSans";
-  src: url("/assets/fonts/OpenSans-VariableFont_wdth\,wght.ttf");
+  src: url("public/fonts/OpenSans-VariableFont_wdth\,wght.ttf");
 }
 
 /**
