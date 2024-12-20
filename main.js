@@ -1,4 +1,3 @@
-import { addContactDetails } from "./modules/addContactDetails.js";
 import { getYearsExperience } from "./modules/utils.js";
 
 // Dynamically calculate my number of years experience
@@ -30,12 +29,20 @@ themeToggle.addEventListener("click", (e) => {
 
 const mediaQuery = window.matchMedia("print");
 
-mediaQuery.addEventListener("change", (e) => {
+mediaQuery.addEventListener("change", async (e) => {
   if (
     e.matches &&
     (window.location.hostname === "localhost" ||
       window.location.hostname === "127.0.0.1")
   ) {
-    addContactDetails();
+    try {
+      const { addContactDetails } = await import(
+        "./modules/addContactDetails.js"
+      );
+
+      addContactDetails();
+    } catch (error) {
+      console.error("Failed to load addContactDetails:", error);
+    }
   }
 });
