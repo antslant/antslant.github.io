@@ -9,8 +9,8 @@
 }
 
 @font-face {
-  font-family: "EuclidFlex";
-  src: url("public/fonts/EuclidFlex-Regular.otf");
+  font-family: "Poppins";
+  src: url("public/fonts/Poppins-Medium.ttf");
 }
 
 @font-face {
@@ -33,12 +33,12 @@ body {
 
 h1,
 h2 {
-  font-family: "EuclidFlex", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: bolder;
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 2.2rem;
 }
 
 h2 {
