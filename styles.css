@@ -10,7 +10,7 @@
 
 @font-face {
   font-family: "Poppins";
-  src: url("public/fonts/Poppins-Medium.ttf");
+  src: url("public/fonts/Poppins-SemiBold.ttf");
 }
 
 @font-face {
@@ -34,7 +34,7 @@ body {
 h1,
 h2 {
   font-family: "Poppins", sans-serif;
-  font-weight: bolder;
+  font-weight: 600;
 }
 
 h1 {
