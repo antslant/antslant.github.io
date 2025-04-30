@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anthony Rigby - Cover Letter</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div>
+        <h1>Cover Letter <span class="dash">—</span></h1>
+        <div class="contact"></div>
+      </div>
+      <div class="letter">
+        <p class="paragraph">Dear Hiring Manager,</p>
+        <p class="paragraph">
+          I'm applying for the Software Developer role, which I found on the
+          recruitment website <em>Welcome to the Jungle</em>. Having previously
+          built and scaled a mid-sized e-commerce company before moving into
+          software engineering, I believe I would be a valuable addition to your
+          team.
+        </p>
+        <p class="paragraph">
+          I am highly experienced working remotely and have spent the past four
+          years developing production-grade applications using React and
+          TypeScript. I have a keen eye for detail and pride myself on
+          delivering clean, high-quality and maintainable code.
+        </p>
+        <p class="paragraph">
+          As a former retail business owner, I'm especially drawn to Slice's
+          mission to help retailers grow and succeed. The goal of equipping
+          independent businesses with tools to scale and thrive strongly
+          resonates with my own journey and values.
+        </p>
+        <p class="paragraph">
+          I'd welcome the opportunity to discuss how I could contribute to your
+          team. Thank you for considering my application..
+        </p>
+        <p class="paragraph">
+          Kind regards,<br />
+          Anthony Rigby
+        </p>
+      </div>
+    </div>
+
+    <script>
+      if (location.hostname !== "127.0.0.1") {
+        document.body.innerHTML = "<h1>403 Forbidden</h1>";
+
+        throw new Error("Access denied: not running on localhost");
+      }
+
+      const { search } = new URLSearchParams(location.search);
+    </script>
+
+    <script src="modules/print.js"></script>
+  </body>
+</html>

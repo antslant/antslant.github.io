@@ -11,6 +11,13 @@
 @font-face {
   font-family: "Poppins";
   src: url("public/fonts/Poppins-SemiBold.ttf");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: url("public/fonts/Poppins-Medium.ttf");
+  font-weight: 500;
 }
 
 @font-face {
@@ -31,20 +38,18 @@ body {
   transition: background-color 0.4s, color 0.4s;
 }
 
-h1,
-h2 {
+h1 {
   font-family: "Poppins", sans-serif;
   font-weight: 600;
-}
-
-h1 {
   font-size: 2.2rem;
 }
 
 h2 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
   display: inline-block;
   font-size: 1.5rem;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   margin-bottom: 1.5rem;
 }
 
@@ -247,7 +252,7 @@ Styles for screens over 600px wide
   }
 
   h2 {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
 
   h3 {
@@ -296,7 +301,7 @@ Styles for screens over 600px wide
 
   .container {
     text-align: left;
-    max-width: 1000px;
+    width: 1000px;
     gap: 6rem;
   }
 
@@ -376,4 +381,14 @@ Styles for screens over 600px wide
   .portfolio {
     display: contents;
   }
+}
+
+/**
+Cover Letter
+**/
+
+.letter {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }

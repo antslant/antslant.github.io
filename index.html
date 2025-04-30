@@ -29,7 +29,11 @@
       <header>
         <div class="theme-toggle">
           <label class="switch">
-            <input type="checkbox" id="theme-toggle" />
+            <input
+              type="checkbox"
+              id="theme-toggle"
+              aria-label="Toggle theme"
+            />
             <span class="slider round"></span>
           </label>
         </div>
@@ -38,7 +42,7 @@
             Anthony Rigby <span class="dash">—</span>
             <span class="title">Web Developer</span>
           </h1>
-          <div class="contact"></div>
+          <div class="contact" aria-hidden="true"></div>
         </div>
       </header>
 
@@ -269,6 +273,7 @@
       </footer>
 
       <script type="module" src="main.js"></script>
+      <script src="modules/print.js"></script>
     </div>
   </body>
 </html>
